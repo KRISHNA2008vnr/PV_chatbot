@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pon Vidyashram Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+        .logo {
+            width: 100px; /* Smaller logo for mobile */
+            margin-top: 10px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        h1 {
+            font-size: 1.2rem; /* Smaller text for mobile */
+            font-weight: 600;
+            margin-top: 10px;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+        .iframe-container {
+            width: 95%;
+            max-width: 800px;
+            height: 450px;
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .logo {
+                width: 150px; /* Larger logo for bigger screens */
+            }
+            h1 {
+                font-size: 1.8rem; /* Larger text on bigger screens */
+            }
+            .iframe-container {
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- School Logo -->
+    <img src="unnamed.png" alt="Pon Vidyashram Logo" class="logo">
+
+    <!-- School Name -->
+    <h1>Welcome to Pon Vidyashram AI Chatbot</h1>
+
+    <!-- Chatbot Iframe -->
+    <div class="iframe-container">
+        <iframe src="https://udify.app/chatbot/z6WpDS8L8dS7CPXx" allow="microphone"></iframe>
+    </div>
+
+</body>
+</html>
